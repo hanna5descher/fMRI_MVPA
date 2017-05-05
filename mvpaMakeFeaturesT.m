@@ -1,7 +1,7 @@
 function features = mvpaMakeFeaturesT(subjID,nameIdx,dirData,contrastID,saveName,flagMultipleGLM)
 % subjID: subject ID, e.g., SAT01
 % nameIdx: full path to the neighbor file (searchlight sphere file)
-% dirData: GLM output file directory (e.g., C:\Users\ho20\Desktop\fMRI_Data\SAT.01\Data\...\Analysis\...)
+% dirData: GLM output file directory
 % contrastID: T map number, e.g., SPMT_0001.nii 
 % saveName: output file name 
 % flagMultipleGLM: input number of GLM analysis 
