@@ -16,7 +16,7 @@ Included MATLAB codes use SPM12 (or SPM8; http://www.fil.ion.ucl.ac.uk/spm/) for
    To perform searchlight MVPA (Kriegeskorte et al. 2006; Haynes et al. 2007), generate a whole-brain searchlight file using a gray matter mask from the T1 segmentation. The searchlight is a spherical cluster with a radius of 3-5 voxels.
    * Resample gray matter masks (either from subject's T1 or from the SPM T1 template) to match the functional image space
    * Create a searchlight index file (.dat)
-   * note. The function "GenerateIdxFile" uses a brute force method (lots of for loops) to go through the entire brain...
+   * Note. The function "GenerateIdxFile" uses a brute force method (lots of for loops) to search through the entire brain...(could be enhanced later, but it works!)
 
 4. Feature generation
    Using beta (or T) maps (#2) and the searchlight file (#3), extract features for MVPA.
