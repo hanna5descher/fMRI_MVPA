@@ -29,4 +29,5 @@ Included MATLAB codes use SPM12 (or SPM8; http://www.fil.ion.ucl.ac.uk/spm/) for
 
 6. Generate a group-level average accuracy map to detect statistically significant clusters (= searchlights)
 
-* runMVPA_SVM_Regression.m is a sample script that covers the procedure decribed in 3-6 for SVM regression. SVM classification uses the same procedure by switching out the "label" variable to binary (0 and 1) and using the function, "mvpaRunSearchlightWithinSubjects".
+
+* "runMVPA_SVM_Regression.m" is a sample script that covers the procedure decribed in 3-6 for SVM regression. SVM classification uses the same procedure by switching out the "label" variable to binary (0 and 1) and using the function, "mvpaRunSearchlightWithinSubjects".
