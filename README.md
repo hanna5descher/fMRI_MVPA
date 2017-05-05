@@ -9,11 +9,9 @@ Included MATLAB codes use SPM12 (or SPM8; http://www.fil.ion.ucl.ac.uk/spm/) for
    Functional image realignment (and reslice, if running MVPA in a subject-specific native space), slice timing correction, coregistration, T1 segmentation, normalizatio (to MNI space), and smoothing (optional)
 
 2. Run GLM
-⋅⋅⋅To construct inputs (or features) for MVPA, perform GLM analysis to extract beta or T maps per condition⋅⋅
-
-⋅⋅⋅=> Native space: Use resliced functional images (I prefer to use unsmoothed data)⋅⋅
-
-⋅⋅⋅=> MNI space: Use normalized functional images (again, using unsmoothed data is more conventional)⋅⋅
+   To construct inputs (or features) for MVPA, perform GLM analysis to extract beta or T maps per condition
+  * Native space: Use resliced functional images (I prefer to use unsmoothed data)
+  * MNI space: Use normalized functional images (again, using unsmoothed data is more conventional)
 
 3. Build the whole-brain searchlight using a gray matter mask
 ⋅⋅⋅To perform searchlight MVPA (Kriegeskorte et al. 2006; Haynes et al. 2007), generate a whole-brain searchlight file using a gray matter mask from the T1 segmentation. The searchlight is a spherical cluster with a radius of 3-5 voxels.⋅⋅
