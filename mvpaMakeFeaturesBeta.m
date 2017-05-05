@@ -2,11 +2,11 @@ function features = mvpaMakeFeaturesBeta(nameIdx,dirData,betaID,saveName)
 % this function extracts SPM beta maps (parameter estimates)
 % nameIdx: full path to the neighbor file (searchlight sphere file)
 % dirData: GLM output file directory 
-% betaID: T map number, e.g., SPMT_0001.nii 
+% betaID: beta map number, e.g., beta_0001.nii 
 % saveName: output file name 
 % flagMultipleGLM: input number of GLM analysis 
 
-% load neighbor data (e.g., searchIdx2.dat - searchlight with radius = 2 voxels)
+% load searchlight data 
 fid = fopen(nameIdx, 'r');
 len = fread(fid, 1, 'int32');
 sL2Voxel = fread(fid, len, 'int32'); %grey matter voxel (because search*.dat files are specified for 53x63x46 voxels, need to process each subject's data with this specification; use rwa*.img files)
