@@ -1,6 +1,5 @@
 clear; close all;
-% Preprocessing Script for SPM
-% Run SAT_convertBXH.m before running this script
+% Preprocessing Script for SPM8 (or prior)
 
 load('dataAnalyzeBehavior','subjID','biacID');
 for iS = 1 : length(subjID)
@@ -43,7 +42,7 @@ disp(['=========== Begin Preprocessing for ' scanInfo.subjID ' ==========']);
 % Motion correction
 % Do realignment and then slice timing 
 % see http://imaging.mrc-cbu.cam.ac.uk/imaging/SliceTimingRikEmail for a discussion on this issue.
-% Realignment creates text files with 6 columns: [translations in mm (îrightî,ìforwardî,ìupî), estimated rotations in rad (îpitchî,ìrollî,ìyawî)]
+% Realignment creates text files with 6 columns: [translations in mm (‚Äùright‚Äù,‚Äúforward‚Äù,‚Äúup‚Äù), estimated rotations in rad (‚Äùpitch‚Äù,‚Äúroll‚Äù,‚Äúyaw‚Äù)]
 % Performing this step will also create a mean image from your set of functional images, 
 % which can later be used to match functional to structural images.
 disp('Step 1: Realignment (Estimate & Reslice)');
