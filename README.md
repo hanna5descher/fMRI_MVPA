@@ -23,4 +23,4 @@ Included MATLAB codes use SPM12 (or SPM8; http://www.fil.ion.ucl.ac.uk/spm/) for
 
 5. Run SVM 
 
-6. Generate a group-level average accuracy map and and detect statistically significant clusters (= searchlights)
+6. Generate a group-level average accuracy map to detect statistically significant clusters (= searchlights)
