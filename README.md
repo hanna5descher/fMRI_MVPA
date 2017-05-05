@@ -1,5 +1,5 @@
 # fMRI_MVPA
-Whole-Brain Searchlight Multi-Voxel Pattern Analysis using Support Vector Machine Classification &amp; Regression
+Whole-Brain Searchlight Multi-Voxel Pattern Analysis (MVPA) using Support Vector Machine Classification &amp; Regression
 
 Included MATLAB codes use SPM12 (or SPM8; http://www.fil.ion.ucl.ac.uk/spm/) for functional magnetic resonance imaging (fMRI) data preprocessing and the general linear model (GLM) analysis.
 
@@ -22,3 +22,5 @@ Included MATLAB codes use SPM12 (or SPM8; http://www.fil.ion.ucl.ac.uk/spm/) for
    Using beta (or T) maps (#2) and the searchlight file (#3), extract features for MVPA.
 
 5. Run SVM 
+
+6. Esimate group-level accuracy map
