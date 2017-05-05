@@ -23,7 +23,7 @@ Included MATLAB codes use SPM12 (or SPM8; http://www.fil.ion.ucl.ac.uk/spm/) for
 
 4. Feature generation
    
-   Using beta (mvpaMakeFeaturesBeta.m) or T (mvpaMakeFeaturesT.m) maps (#2) and the searchlight file (#3), extract features for MVPA.
+   Using beta (mvpaMakeFeaturesBeta.m) or T (mvpaMakeFeaturesT.m) maps (from #2) and the searchlight file (from #3), extract features for MVPA.
 
 5. Run SVM Classification (mvpaRunSearchlightWithinSubjects.m) or Regression (mvpaRunSearchlightRegressionWithinSubjects.m)
 
