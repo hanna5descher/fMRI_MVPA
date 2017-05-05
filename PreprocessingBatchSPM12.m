@@ -3,7 +3,7 @@ spm fmri; % this is to open up a progress bar & print out graphics results
 
 curDir = pwd;
 
-load('dataAnalyzeBehavior','subjID','biacID');
+load('dataAnalyzeBehavior','subjID','biacID'); % contains subject and scan IDs
 
 for iS = 1 : length(subjID)
     scanInfo.subjID = subjID{iS}; 
