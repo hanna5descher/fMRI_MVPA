@@ -1,12 +1,12 @@
 clear;
-addpath('C:\Users\ho20\Desktop\fMRI_Data\SAT.01\dataBehavioral');
-load('dataExtractBehavior3','scanP');
-dirData = 'C:\Users\ho20\Desktop\fMRI_Data\SAT.01\dataFMRI';
+%addpath('\dataBehavioral');
+%load('dataExtractBehavior3','scanP'); % load scan parameters
+dirData = fullfile(pwd, 'dataFMRI');
 curDir = pwd;
 
 nameAnalysis = 'MVPA_CueValue_pmodFeedbackRT_perRun_NativeSpace';
 nameHdrPrefix = {'cvNP_CueRegression_','cvTP_CueRegression_','mseNP_CueRegression_','mseTP_CueRegression_'};
-foldername = 'C:\Users\ho20\Desktop\fMRI_Data\SAT.01\MVPA\AccuracyMap\MVPA_CueValueRegression_WithinSubject_NativeSpace\Tmap_searchIdx4';
+foldername = fullfile(curDir,'MVPA','AccuracyMap','MVPA_CueValueRegression_WithinSubject_NativeSpace');
 
 for iS = 1 : scanP.nSubj
     dirAnat = fullfile(dirData,scanP.subjID{iS},scanP.biacID{iS},'Anat'); % T1 anatomical
