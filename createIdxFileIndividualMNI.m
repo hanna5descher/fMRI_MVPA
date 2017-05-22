@@ -28,7 +28,7 @@ for iS = 1 : scanP.nSubj
     
     % resample the mask to match functional space
     nameGM_MNI = fullfile(dirAnat,['wc1' scanP.subjID{iS} '_anat0001.nii']);
-    nameGM_MNI = fullfile(curDir,'c1T1_Original.nii'); % to segment template GM mask
+    %nameGM_MNI = fullfile(curDir,'c1T1_Original.nii'); % to segment template GM mask
     nameTargetSpace = fullfile(dirFunc,'Run1',['wa' scanP.subjID{iS} '_Run1_0005.img']);
     nameImages = {nameTargetSpace, nameGM_MNI};
     optReslice.which = [1 0]; % images 2...n (don't reslice the sample image)
