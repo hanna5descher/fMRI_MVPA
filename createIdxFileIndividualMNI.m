@@ -1,7 +1,7 @@
 clear;
-addpath('C:\Users\ho20\Desktop\fMRI_Data\SAT.01\dataBehavioral');
-load('dataExtractBehavior3','scanP');
-dirData = 'C:\Users\ho20\Desktop\fMRI_Data\SAT.01\dataFMRI';
+%addpath('\dataBehavioral');
+%load('dataExtractBehavior3','scanP'); % load scan parameters
+dirData = fullfile(pwd,'dataFMRI');
 curDir = pwd;
 dirSave = fullfile(curDir,'IndividualMNI');
 
