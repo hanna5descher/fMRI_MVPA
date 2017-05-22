@@ -39,6 +39,7 @@ for iS = 1 : scanP.nSubj
     spm_reslice(nameImages,optReslice);
     
     % create searchlight index file    
+    % if needed, convert .nii file to .hdr/.img files; GenerateIdxFile processes .img file only.
     nameGMResampled = fullfile(dirAnat,['frwc1' scanP.subjID{iS} '_anat0001.img']);
     %nameGMResampled = fullfile(curDir,'frc1T1_Original.img');
     infoHdr = spm_vol(nameGMResampled);
