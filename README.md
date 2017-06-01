@@ -6,7 +6,7 @@ Included MATLAB codes use SPM12 (or SPM8; http://www.fil.ion.ucl.ac.uk/spm/) for
 ## Analysis Pipeline
 1. fMRI data preprocessing: PreprocessingBatchSPM12.m (or PreprocessingSPM8.m for older SPM versions)
    
-   Functional image realignment (and reslice, if running MVPA in a subject-specific native space), slice timing correction, coregistration, T1 segmentation, normalizatio (to MNI space), and smoothing (optional)
+   Functional image realignment (and reslice, if running MVPA in a subject-specific native space), slice timing correction, coregistration, T1 segmentation, normalization (to MNI space), and smoothing (optional)
 
 2. Run GLM
    
